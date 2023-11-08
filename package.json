@@ -1,17 +1,17 @@
 {
 	"name": "feature-sliced-svelte",
-	"version": "1.0.0",
-    "description": "Control of FSD with Svelte",
-    "author": {
-        "name": "Mikhael Khrustik",
-        "url": "https://myrt.co"
-    },
-    "keywords": [
-        "svelte",
-        "sveltekit",
-        "feature-sliced-design"
-    ],
-    "license": "MIT",
+	"version": "1.0.1-rc.0",
+	"description": "Control of FSD with Svelte",
+	"author": {
+		"name": "Mikhael Khrustik",
+		"url": "https://myrt.co"
+	},
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"feature-sliced-design"
+	],
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
