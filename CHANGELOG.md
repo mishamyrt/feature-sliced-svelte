@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.1-rc.3](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.0.1-rc.2...v1.0.1-rc.3) (2023-11-08)
+
+### Bug Fixes
+
+* **showcase:** use correct logo url with base ([6223287](https://github.com/mishamyrt/feature-sliced-svelte/commit/6223287aaace98f3d1800c5c635fc931d27c72f4))
+
 ## [1.0.1-rc.2](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.0.1-rc.1...v1.0.1-rc.2) (2023-11-08)
 
 ### Bug Fixes
