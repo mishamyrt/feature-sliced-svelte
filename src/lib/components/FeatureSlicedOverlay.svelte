@@ -76,7 +76,7 @@
     width: 220px;
     background-color: #292929;
     border-radius: 8px;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
   }
