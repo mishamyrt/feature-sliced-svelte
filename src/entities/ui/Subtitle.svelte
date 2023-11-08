@@ -11,6 +11,5 @@
   .subtitle {
     font-size: 24px;
     margin: 0;
-    color: var(--color-content-secondary);
   }
 </style>

@@ -17,6 +17,7 @@
 <style>
   .code {
     background-color: var(--color-background-secondary);
+    font-family: var(--font-family-code);
     padding: 7px 20px;
     margin: 0 -20px;
     border-radius: 8px;

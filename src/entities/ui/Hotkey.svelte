@@ -11,5 +11,6 @@
   .combination {
     font-size: 48px;
     margin: 24px 0;
+    color: var(--color-content-accent);
   }
 </style>
