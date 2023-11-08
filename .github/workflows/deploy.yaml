@@ -40,6 +40,8 @@ jobs:
           version: ${{ env.PNPM_VERSION }}
 
       - name: Build package
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: pnpm build
 
       - name: Publish package
