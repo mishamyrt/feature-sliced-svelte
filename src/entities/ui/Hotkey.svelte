@@ -4,11 +4,12 @@
 </script>
 
 <div use:fsd={'entities/Hotkey'}>
-  <span class="combination">{combination}</span>
+  <div class="combination">{combination}</div>
 </div>
 
 <style>
   .combination {
     font-size: 48px;
+    margin: 24px 0;
   }
 </style>
