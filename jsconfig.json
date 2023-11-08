@@ -1,0 +1,19 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+        "module": "NodeNext",
+		"moduleResolution": "NodeNext",
+        "paths": {
+            "$features": ["./src/features"],
+            "$widgets": ["./src/widgets"],
+            "$entities": ["./src/entities"],
+            "$lib": ["./src/lib"],
+            "$lib/*": ["./src/lib/*"]
+        }
+	},
+}
