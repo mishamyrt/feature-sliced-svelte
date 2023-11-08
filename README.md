@@ -1,6 +1,6 @@
-<center>
+<p align="center">
     <img src="./static/logo.svg" width="70px" />
-</center>
+</p>
 
 # Feature Sliced Svelte
 
