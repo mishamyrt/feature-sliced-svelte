@@ -1,9 +1,10 @@
 <script>
     import { fsd } from '$lib'
+    import { base } from "$app/paths";
 </script>
 
 <div class="logo" use:fsd={'entities/Logo'}>
-    <img class="icon" src="/logo.svg?url" alt="Feature Sliced Svelte Logo" />
+    <img class="icon" src="{base}/logo.svg?url" alt="Feature Sliced Svelte Logo" />
     <h1 class="text">Feature Sliced Svelte</h1>
 </div>
 
