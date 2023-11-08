@@ -1,5 +1,5 @@
 module.exports = {
-    scripts: {
-      postchangelog: './scripts/fix-headers.js',
-    },
-  }
+  scripts: {
+    postchangelog: './scripts/fix-headers.js',
+  },
+};
