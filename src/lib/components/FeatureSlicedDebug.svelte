@@ -1,7 +1,6 @@
 <script>
-	import { browser } from "$app/environment";
     import { countByLayers } from "../utils/dom-utils.js";
-	import { onDestroy, onMount } from "svelte";
+	import { onMount } from "svelte";
 	import FeatureSlicedOverlay from "./FeatureSlicedOverlay.svelte";
 
     let showOverlay = false
@@ -24,14 +23,7 @@
     }
     
     onMount(() => {
-        if (browser) {
-            document.body.addEventListener('keydown', handleKeyDown)
-        }
-    })
-    onDestroy(() => {
-        if (browser) {
-            document.body.removeEventListener('keydown', handleKeyDown)
-        }
+        document.body.addEventListener('keydown', handleKeyDown)
     })
 
     $: isLayersVisible = (() => {
