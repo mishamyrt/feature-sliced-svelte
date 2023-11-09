@@ -1,0 +1,44 @@
+name: Quality Assurance
+
+env:
+  PNPM_VERSION: '8.10.2'
+  NODE_VERSION: '20.4'
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    env:
+      PNPM_VERSION: '8.6.2'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: |
+            cwd: ./
+            args: [--frozen-lockfile]
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Check with svelte-check
+        run: pnpm check
+
+      - name: Check code style
+        run: pnpm lint
+
+      - name: Check build
+        run: pnpm build
+
+      - name: Run tests
+        run: pnpm test
