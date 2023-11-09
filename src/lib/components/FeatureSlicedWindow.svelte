@@ -78,6 +78,7 @@
   .window {
     width: 170px;
     background-color: #282828;
+    color: rgb(255 255 255 / 90%);
     border-radius: 8px;
     position: fixed;
     border: 1px solid rgb(60 60 60 / 77%);
