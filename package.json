@@ -1,6 +1,6 @@
 {
   "name": "feature-sliced-svelte",
-  "version": "1.0.1-rc.3",
+  "version": "1.1.0",
   "description": "Control of FSD with Svelte",
   "author": {
     "name": "Mikhael Khrustik",

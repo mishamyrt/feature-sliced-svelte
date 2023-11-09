@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.0.1-rc.3...v1.1.0) (2023-11-09)
+
+### Features
+
+* improve showcase styles ([bfe6a3c](https://github.com/mishamyrt/feature-sliced-svelte/commit/bfe6a3c6573e1f18545d3c8cdc259a9971662b69))
+
+
+### Bug Fixes
+
+* use fixed position for overlay ([a51b4ce](https://github.com/mishamyrt/feature-sliced-svelte/commit/a51b4ce10c5c25b9ab9a8d92fb9ee2048f47ac45))
+
 ## [1.0.1-rc.3](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.0.1-rc.2...v1.0.1-rc.3) (2023-11-08)
 
 ### Bug Fixes
