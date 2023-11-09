@@ -8,6 +8,7 @@
     "sourceMap": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "strict": true,
     "paths": {
       "$features": ["./src/features"],
       "$widgets": ["./src/widgets"],
