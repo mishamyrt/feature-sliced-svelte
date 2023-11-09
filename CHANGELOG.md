@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.1.0...v1.2.0) (2023-11-09)
+
+### Features
+
+* improve window styles ([5fd6ef9](https://github.com/mishamyrt/feature-sliced-svelte/commit/5fd6ef917049883ffec0d67c46e530444bc8ab78))
+
+
+### Bug Fixes
+
+* avoid hard import ([5c68ccb](https://github.com/mishamyrt/feature-sliced-svelte/commit/5c68ccb0fe3c51cd0f0cb0ed65a1e321cb94df09))
+* **FeatureSlicedDebug:** show all outlines by default ([0e8a7fa](https://github.com/mishamyrt/feature-sliced-svelte/commit/0e8a7fac5fc38eec97861ea1f8a87aa8ed3a0279))
+
 ## [1.1.0](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.0.1-rc.3...v1.1.0) (2023-11-09)
 
 ### Features
