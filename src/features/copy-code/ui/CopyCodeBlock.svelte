@@ -1,11 +1,12 @@
 <script lang="ts">
-  import { CopyButton } from '$features'
   import { fsd } from '$lib'
+
+  import CopyButton from './CopyButton.svelte'
 
   export let value: string
 </script>
 
-<div use:fsd={'widgets/CodeBlock'} class="container">
+<div use:fsd={'features/CopyCodeBlock'} class="container">
   <div class="code">
     <pre><code>{value}</code></pre>
   </div>

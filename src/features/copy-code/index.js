@@ -1,3 +1,3 @@
-import CopyButton from './ui/CopyButton.svelte'
+import CopyCodeBlock from './ui/CopyCodeBlock.svelte'
 
-export { CopyButton }
+export { CopyCodeBlock }

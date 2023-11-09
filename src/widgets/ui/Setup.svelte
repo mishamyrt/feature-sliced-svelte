@@ -1,17 +1,16 @@
 <script>
   import { installCommand, wrapperCode } from '$entities'
+  import { CopyCodeBlock } from '$features'
   import { fsd } from '$lib'
-
-  import CodeBlock from './CodeBlock.svelte'
 </script>
 
 <div use:fsd={'widgets/Setup'}>
   <h2>Setup</h2>
   <p>First, install the package.</p>
-  <CodeBlock value={installCommand} />
+  <CopyCodeBlock value={installCommand} />
   <p>
     Then wrap the root (App) element of your application in a FeatureSlicedDebug
     component.
   </p>
-  <CodeBlock value={wrapperCode} />
+  <CopyCodeBlock value={wrapperCode} />
 </div>

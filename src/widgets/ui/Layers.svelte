@@ -1,8 +1,7 @@
 <script>
   import { layersCode } from '$entities'
+  import { CopyCodeBlock } from '$features'
   import { fsd } from '$lib'
-
-  import CodeBlock from './CodeBlock.svelte'
 </script>
 
 <div use:fsd={'widgets/Layers'}>
@@ -11,5 +10,5 @@
     Now when creating a new component, use action to set the FSD layer. The allowed
     layer names can be found in the FSD documentation.
   </p>
-  <CodeBlock value={layersCode} />
+  <CopyCodeBlock value={layersCode} />
 </div>

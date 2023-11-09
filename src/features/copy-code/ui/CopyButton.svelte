@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { fsd } from '$lib'
-
   export let value: string
 
   function handleClick() {
@@ -8,7 +6,7 @@
   }
 </script>
 
-<button use:fsd={'features/CopyButton'} on:click={handleClick} class="button">
+<button on:click={handleClick} class="button">
   Copy
 </button>
 
