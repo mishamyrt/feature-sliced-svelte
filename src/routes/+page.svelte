@@ -1,7 +1,7 @@
 <script>
   import '../app.css'
 
-  import { FeatureSlicedDebug, fsd } from '$lib/index'
+  import { FeatureSlicedDebug, fsd } from '$lib/index.js'
   import { Debugging, Hero, Layers, Setup } from '$widgets'
 </script>
 

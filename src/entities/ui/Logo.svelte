@@ -1,4 +1,5 @@
 <script>
+  // eslint-disable-next-line import/extensions
   import { base } from '$app/paths'
   import { fsd } from '$lib'
 </script>

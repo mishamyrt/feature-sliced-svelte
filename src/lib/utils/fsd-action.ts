@@ -6,10 +6,12 @@ function processElement(el: HTMLElement, name: string) {
   const results = parseName(name)
   if (!results) {
     // eslint-disable-next-line no-console
-    console.error([
-      `Module name '${name}' is incorrect. Format should be <layer>/<module>.`,
-      `Allowed layers are: ${allowedLayers.join(', ')}`,
-    ].join('\n'))
+    console.error(
+      [
+        `Module name '${name}' is incorrect. Format should be <layer>/<module>.`,
+        `Allowed layers are: ${allowedLayers.join(', ')}`,
+      ].join('\n'),
+    )
     return
   }
   setAttributes(el, ...results)

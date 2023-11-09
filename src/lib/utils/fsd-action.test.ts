@@ -17,7 +17,9 @@ vi.mock('./attributes.js', async (importOriginal) => {
 
 describe('fsd action', () => {
   it('should set attributes on element with valid name', async () => {
-    const { getByTestId } = render(FSDActionTest, { props: { name: 'entities/ModuleName' } })
+    const { getByTestId } = render(FSDActionTest, {
+      props: { name: 'entities/ModuleName' },
+    })
     const element = getByTestId('fsd-test-element')
 
     expect(setAttributes).toHaveBeenCalledWith(element, 'entities', 'ModuleName')
@@ -31,7 +33,9 @@ describe('fsd action', () => {
   })
 
   it('should update attributes when name is updated', async () => {
-    const { getByTestId, rerender } = render(FSDActionTest, { props: { name: 'entities/ModuleName' } })
+    const { getByTestId, rerender } = render(FSDActionTest, {
+      props: { name: 'entities/ModuleName' },
+    })
     const element = getByTestId('fsd-test-element')
 
     expect(setAttributes).toHaveBeenCalledWith(element, 'entities', 'ModuleName')
