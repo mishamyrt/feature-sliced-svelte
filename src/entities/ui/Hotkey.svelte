@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
   import { fsd } from '$lib'
-  export let combination
+
+  export let combination: string
 </script>
 
 <div use:fsd={'entities/Hotkey'}>

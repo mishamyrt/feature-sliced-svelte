@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import { fsd } from '$lib'
 
-  export let value
+  export let value: string
 
   function handleClick() {
     navigator.clipboard.writeText(value)

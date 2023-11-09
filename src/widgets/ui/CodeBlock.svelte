@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import { CopyButton } from '$features'
   import { fsd } from '$lib'
 
-  export let value
+  export let value: string
 </script>
 
 <div use:fsd={'widgets/CodeBlock'} class="container">
