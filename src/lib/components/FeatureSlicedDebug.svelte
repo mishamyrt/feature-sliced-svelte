@@ -1,5 +1,5 @@
 <script>
-  import { countByLayers } from '../utils/dom-utils.js';
+  import { countByLayers } from '../utils/dom/index.js';
   import { onMount } from 'svelte';
   import FeatureSlicedOverlay from './FeatureSlicedOverlay.svelte';
 
