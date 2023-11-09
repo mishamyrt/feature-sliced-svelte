@@ -1,23 +1,25 @@
-import { setFSDAttributes } from './dom/index.js'
-import { allowedLayers, isCorrectName } from './layers/index.js'
+import { setAttributes } from './attributes.js'
+import { allowedLayers } from './layer.js'
+import { parseName } from './name.js'
 
-function assertModuleName(name: string) {
-  if (!isCorrectName(name)) {
+function processElement(el: HTMLElement, name: string) {
+  const results = parseName(name)
+  if (!results) {
     // eslint-disable-next-line no-console
-    console.warn(`Module name '${name}' is incorrect.
-Format should be <layer>/<module>.
-Allowed layers are: ${allowedLayers.join(', ')}`)
+    console.error([
+      `Module name '${name}' is incorrect. Format should be <layer>/<module>.`,
+      `Allowed layers are: ${allowedLayers.join(', ')}`,
+    ].join('\n'))
+    return
   }
+  setAttributes(el, ...results)
 }
 
 export function fsd(el: HTMLElement, name: string) {
   function update(newName: string) {
-    assertModuleName(newName)
-    setFSDAttributes(el, newName)
+    processElement(el, newName)
   }
-
-  assertModuleName(name)
-  setFSDAttributes(el, name)
+  processElement(el, name)
 
   return { update }
 }

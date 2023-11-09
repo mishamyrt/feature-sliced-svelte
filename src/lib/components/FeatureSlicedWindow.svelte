@@ -1,11 +1,11 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte'
 
-  import { countByLayers } from '../utils/dom/queries'
+  import { getModulesCount } from '../utils/count.js'
 
   const dispatch = createEventDispatcher()
 
-  const layers = countByLayers()
+  const layers = getModulesCount()
 
   function handleMouseEnter(layerName: string) {
     dispatch('mouseenter', layerName)

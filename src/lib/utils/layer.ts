@@ -11,4 +11,6 @@ export const allowedLayersSet = new Set<string>(allowedLayers)
 
 export type Layer = (typeof allowedLayers)[number]
 
-export type ModuleName = `${Layer}/${string}`
+export function isLayer(x: string): x is Layer {
+  return allowedLayersSet.has(x)
+}
