@@ -78,27 +78,27 @@
     display: none;
   }
 
-  .featuresVisible :global([data-fsd-layer='features']) {
+  :global([data-fsd-layer='features']) {
     --fsd-hue: var(--fsd-hue-features);
   }
 
-  .widgetsVisible :global([data-fsd-layer='widgets']) {
+  :global([data-fsd-layer='widgets']) {
     --fsd-hue: var(--fsd-hue-widgets);
   }
 
-  .entitiesVisible :global([data-fsd-layer='entities']) {
+  :global([data-fsd-layer='entities']) {
     --fsd-hue: var(--fsd-hue-entities);
   }
 
-  .pagesVisible :global([data-fsd-layer='pages']) {
+  :global([data-fsd-layer='pages']) {
     --fsd-hue: var(--fsd-hue-pages);
   }
 
-  .sharedVisible :global([data-fsd-layer='shared']) {
+  :global([data-fsd-layer='shared']) {
     --fsd-hue: var(--fsd-hue-shared);
   }
 
-  .appVisible :global([data-fsd-layer='app']) {
+  :global([data-fsd-layer='app']) {
     --fsd-hue: var(--fsd-hue-app);
   }
 
@@ -107,7 +107,8 @@
   .entitiesVisible.show :global([data-fsd-layer='entities']::after),
   .pagesVisible.show :global([data-fsd-layer='pages']::after),
   .sharedVisible.show :global([data-fsd-layer='shared']::after),
-  .appVisible.show :global([data-fsd-layer='app']::after) {
+  .appVisible.show :global([data-fsd-layer='app']::after),
+  .allVisible.show :global([data-fsd]::after) {
     display: inline-block;
   }
 
@@ -116,7 +117,8 @@
   .entitiesVisible.show :global([data-fsd-layer='entities']),
   .pagesVisible.show :global([data-fsd-layer='pages']),
   .sharedVisible.show :global([data-fsd-layer='shared']),
-  .appVisible.show :global([data-fsd-layer='app']) {
+  .appVisible.show :global([data-fsd-layer='app']),
+  .allVisible.show :global([data-fsd]) {
     outline-color: oklch(50% 0.15 var(--fsd-hue));
     background-color: oklch(50% 0.17 var(--fsd-hue) / 15%);
   }
