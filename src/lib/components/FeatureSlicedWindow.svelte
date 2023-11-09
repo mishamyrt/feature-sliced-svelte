@@ -1,15 +1,18 @@
-<script>
+<script lang="ts">
   import { createEventDispatcher } from 'svelte'
-  export let layers
+
+  import { countByLayers } from '../utils/dom/queries'
 
   const dispatch = createEventDispatcher()
 
-  function handleMouseEnter(layerName) {
+  const layers = countByLayers()
+
+  function handleMouseEnter(layerName: string) {
     dispatch('mouseenter', layerName)
   }
 
-  function handleMouseLeave(layerName) {
-    dispatch('mouseleave', layerName)
+  function handleMouseLeave() {
+    dispatch('mouseleave')
   }
 </script>
 
@@ -23,7 +26,7 @@
     {#each layers as layer}
       <div
         role="presentation"
-        on:mouseleave={() => handleMouseLeave(layer.name)}
+        on:mouseleave={handleMouseLeave}
         on:mouseenter={() => handleMouseEnter(layer.name)}
         class="row"
       >

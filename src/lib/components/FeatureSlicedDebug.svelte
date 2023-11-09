@@ -1,21 +1,18 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte'
 
-  import { countByLayers } from '../utils/dom/index.js'
-  import FeatureSlicedOverlay from './FeatureSlicedOverlay.svelte'
+  import FeatureSlicedWindow from './FeatureSlicedWindow.svelte'
 
   let showOverlay = false
-  let layers = []
   let activeLayer = ''
 
-  function handleKeyDown(e) {
+  function handleKeyDown(e: KeyboardEvent) {
     if (e.code !== 'KeyF' || !e.ctrlKey || !e.shiftKey) return
     e.preventDefault()
     showOverlay = !showOverlay
-    layers = countByLayers()
   }
 
-  function handleHover(e) {
+  function handleHover(e: CustomEvent<string>) {
     activeLayer = e.detail
   }
 
@@ -26,45 +23,22 @@
   onMount(() => {
     document.body.addEventListener('keydown', handleKeyDown)
   })
-
-  $: isLayersVisible = (() => {
-    let defaultValue = false
-    if (activeLayer.length === 0) {
-      defaultValue = true
-    }
-    const results = {
-      shared: defaultValue,
-      entities: defaultValue,
-      features: defaultValue,
-      widgets: defaultValue,
-      pages: defaultValue,
-      app: defaultValue,
-    }
-
-    if (activeLayer.length > 0) {
-      results[activeLayer] = true
-    }
-    return results
-  })()
 </script>
 
 <div
   class="featureSlicedRoot"
   class:show={showOverlay}
-  class:featuresVisible={isLayersVisible.features}
-  class:widgetsVisible={isLayersVisible.widgets}
-  class:sharedVisible={isLayersVisible.shared}
-  class:entitiesVisible={isLayersVisible.entities}
-  class:pagesVisible={isLayersVisible.pages}
-  class:appVisible={isLayersVisible.app}
+  class:allVisible={activeLayer.length === 0}
+  class:featuresVisible={activeLayer === 'features'}
+  class:widgetsVisible={activeLayer === 'widgets'}
+  class:sharedVisible={activeLayer === 'shared'}
+  class:entitiesVisible={activeLayer === 'entities'}
+  class:pagesVisible={activeLayer === 'pages'}
+  class:appVisible={activeLayer === 'app'}
 >
   <slot />
   {#if showOverlay}
-    <FeatureSlicedOverlay
-      {layers}
-      on:mouseenter={handleHover}
-      on:mouseleave={handleLeave}
-    />
+    <FeatureSlicedWindow on:mouseenter={handleHover} on:mouseleave={handleLeave} />
   {/if}
 </div>
 

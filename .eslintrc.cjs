@@ -34,6 +34,7 @@ module.exports = {
     'space-before-function-paren': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/consistent-type-assertions': 'off',
     '@typescript-eslint/space-before-function-paren': [
       'error',
       {

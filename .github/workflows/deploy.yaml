@@ -41,7 +41,7 @@ jobs:
 
       - name: Build package
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+          BASE_PATH: '${{ github.event.repository.name }}'
         run: pnpm build
 
       - name: Publish package
