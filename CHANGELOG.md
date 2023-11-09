@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.1](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.2.0...v1.2.1) (2023-11-09)
+
+### Bug Fixes
+
+* convert code block to feature ([6a7b657](https://github.com/mishamyrt/feature-sliced-svelte/commit/6a7b65735f6a48ecba976b6378bf4ac6988899a6))
+* set correct content color ([1419e66](https://github.com/mishamyrt/feature-sliced-svelte/commit/1419e667a259f64a60ccaa3ef4cf24cf224e8477))
+
 ## [1.2.0](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.1.0...v1.2.0) (2023-11-09)
 
 ### Features
