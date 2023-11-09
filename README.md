@@ -2,7 +2,19 @@
     <img src="./static/logo.svg" width="70px" />
 </p>
 
-# Feature Sliced Svelte
+<h1 align="center">Feature Sliced Svelte</h1>
+
+<p align="center">
+  <a href="https://github.com/mishamyrt/feature-sliced-svelte/actions/workflows/qa.yaml">
+    <img src="https://github.com/mishamyrt/feature-sliced-svelte/actions/workflows/qa.yaml/badge.svg" />
+  </a>
+  <a href="https://github.com/mishamyrt/feature-sliced-svelte/actions/workflows/deploy.yaml">
+    <img src="https://github.com/mishamyrt/feature-sliced-svelte/actions/workflows/deploy.yaml/badge.svg" />
+  </a>
+  <a href="https://www.npmjs.com/package/feature-sliced-svelte">
+    <img src="https://img.shields.io/npm/v/feature-sliced-svelte" />
+  </a>
+</p>
 
 Useful utilities for maintaining a project on Svelte according to the [Feature Sliced Design](https://feature-sliced.design/) architecture.
 
