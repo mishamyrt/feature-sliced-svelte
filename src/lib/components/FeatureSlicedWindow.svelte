@@ -44,7 +44,7 @@
   .heading,
   .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 70px 1fr 1fr;
     align-items: center;
   }
 
@@ -76,12 +76,15 @@
   }
 
   .window {
-    width: 220px;
-    background-color: #292929;
+    width: 170px;
+    background-color: #282828;
     border-radius: 8px;
     position: fixed;
+    border: 1px solid rgb(60 60 60 / 77%);
     bottom: 20px;
     right: 20px;
+    font-family: sans-serif;
+    box-shadow: 0 2px 6px -2px rgb(0 0 0 / 11%);
   }
 
   .legend {
@@ -90,5 +93,7 @@
     height: 14px;
     border-radius: 50%;
     background-color: oklch(50% 0.15 var(--fsd-hue));
+    position: relative;
+    top: 1px;
   }
 </style>
