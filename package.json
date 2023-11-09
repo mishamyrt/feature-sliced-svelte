@@ -22,8 +22,8 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
     "test": "vitest --run",
     "test:watch": "vitest",
-    "lint": "prettier --plugin-search-dir . --check . && eslint .",
-    "format": "prettier --plugin-search-dir . --write . && eslint --fix ."
+    "lint": "prettier --plugin-search-dir . --check . && eslint 'src/**/*.{svlete,ts}' 'scripts/*.js'",
+    "format": "prettier --plugin-search-dir . --write . && eslint --fix 'src/**/*.{svlete,ts}' 'scripts/*.js'"
   },
   "exports": {
     ".": {
