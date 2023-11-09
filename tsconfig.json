@@ -1,14 +1,17 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
     "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "dist",
     "paths": {
       "$features": ["./src/features"],
       "$widgets": ["./src/widgets"],
@@ -16,5 +19,17 @@
       "$lib": ["./src/lib"],
       "$lib/*": ["./src/lib/*"]
     }
-  }
+  },
+  "include": [
+    "scripts/*.js",
+    "scripts/.eslintrc.cjs",
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte",
+    "docs/**/*.mdx",
+    "vite.config.ts",
+    "svelte.config.js",
+    ".eslintrc.cjs"
+  ]
 }

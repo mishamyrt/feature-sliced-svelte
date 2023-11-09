@@ -1,18 +1,47 @@
 module.exports = {
-  root: true,
-  extends: ['eslint:recommended', 'plugin:svelte/recommended', 'prettier'],
+  extends: ['standard-with-typescript', 'plugin:svelte/recommended'],
+  plugins: ['eslint-plugin-simple-import-sort'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2020,
+    project: 'tsconfig.json',
     extraFileExtensions: ['.svelte'],
   },
-  env: {
-    browser: true,
-    es2017: true,
-    node: true,
-  },
+  overrides: [
+    {
+      files: ['*.svelte'],
+      parser: 'svelte-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+      },
+    },
+  ],
   rules: {
-    indent: ['error', 2],
-    'comma-dangle': ['error', 'always-multiline'],
+    'svelte/valid-compile': [
+      'error',
+      {
+        ignoreWarnings: true,
+      },
+    ],
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/no-confusing-void-expression': 'off',
+    '@typescript-eslint/promise-function-async': 'off',
+    '@typescript-eslint/triple-slash-reference': 'off',
+    '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
+    'no-undef-init': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'space-before-function-paren': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'always',
+      },
+    ],
+    'no-console': 'error',
   },
-};
+}

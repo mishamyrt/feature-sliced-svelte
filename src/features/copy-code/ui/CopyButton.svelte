@@ -1,10 +1,10 @@
 <script>
-  import { fsd } from '$lib';
+  import { fsd } from '$lib'
 
-  export let value;
+  export let value
 
   function handleClick() {
-    navigator.clipboard.writeText(value);
+    navigator.clipboard.writeText(value)
   }
 </script>
 

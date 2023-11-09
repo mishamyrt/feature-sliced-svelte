@@ -1,15 +1,15 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
-  export let layers;
+  import { createEventDispatcher } from 'svelte'
+  export let layers
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher()
 
   function handleMouseEnter(layerName) {
-    dispatch('mouseenter', layerName);
+    dispatch('mouseenter', layerName)
   }
 
   function handleMouseLeave(layerName) {
-    dispatch('mouseleave', layerName);
+    dispatch('mouseleave', layerName)
   }
 </script>
 

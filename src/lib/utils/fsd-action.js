@@ -1,5 +1,5 @@
-import { allowedLayers, isCorrectName } from './layers/index.js';
-import { setFSDAttributes } from './dom/index.js';
+import { setFSDAttributes } from './dom/index.js'
+import { allowedLayers, isCorrectName } from './layers/index.js'
 
 /**
  * @param {string} name
@@ -8,7 +8,7 @@ function assertModuleName(name) {
   if (!isCorrectName(name)) {
     throw new Error(`Module name is incorrect.
 Format should be <layer>/<module>.
-Allowed layers are: ${allowedLayers.join(', ')}`);
+Allowed layers are: ${allowedLayers.join(', ')}`)
   }
 }
 
@@ -19,14 +19,14 @@ Allowed layers are: ${allowedLayers.join(', ')}`);
  */
 export function fsd(el, name) {
   function update(newName) {
-    assertModuleName(newName);
-    setFSDAttributes(el, newName);
+    assertModuleName(newName)
+    setFSDAttributes(el, newName)
   }
 
-  assertModuleName(name);
-  setFSDAttributes(el, name);
+  assertModuleName(name)
+  setFSDAttributes(el, name)
 
   return {
     update,
-  };
+  }
 }

@@ -18,7 +18,7 @@ Then wrap the root (App) element of your application in a FeatureSlicedDebug com
 
 ```svelte
 <script>
-  import { FeatureSlicedDebug } from 'feature-sliced-svelte';
+  import { FeatureSlicedDebug } from 'feature-sliced-svelte'
 </script>
 
 <FeatureSlicedDebug>
@@ -32,7 +32,7 @@ Now when creating a new component, use action to set the FSD layer. The allowed 
 
 ```svelte
 <script>
-  import { fsd } from 'feature-sliced-svelte';
+  import { fsd } from 'feature-sliced-svelte'
 </script>
 
 <div use:fsd={'widgets/UserList'}>

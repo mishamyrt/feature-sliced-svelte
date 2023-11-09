@@ -1,7 +1,8 @@
 <script>
-  import CodeBlock from './CodeBlock.svelte';
-  import { installCommand, wrapperCode } from '$entities';
-  import { fsd } from '$lib';
+  import { installCommand, wrapperCode } from '$entities'
+  import { fsd } from '$lib'
+
+  import CodeBlock from './CodeBlock.svelte'
 </script>
 
 <div use:fsd={'widgets/Setup'}>

@@ -1,4 +1,4 @@
-//@ts-check
+// @ts-check
 
 /**
  * @typedef {import('../layers/types.js').Layer} Layer
@@ -14,19 +14,19 @@
  * @returns {ComponentsCount[]}
  */
 export function countByLayers() {
-  const items = document.querySelectorAll('[data-fsd]');
-  const results = /** @type {ComponentsCountMap} */ ({});
+  const items = document.querySelectorAll('[data-fsd]')
+  const results = /** @type {ComponentsCountMap} */ ({})
   for (const item of items) {
-    const layer = /** @type {Layer} */ (item.getAttribute('data-fsd-layer'));
-    if (!layer) continue;
+    const layer = /** @type {Layer} */ (item.getAttribute('data-fsd-layer'))
+    if (!layer) continue
     if (layer in results) {
-      results[layer]++;
+      results[layer]++
     } else {
-      results[layer] = 1;
+      results[layer] = 1
     }
   }
   return Object.entries(results).map(([name, count]) => ({
-    name: /** @type {Layer} */ (name),
+    name,
     count,
-  }));
+  }))
 }

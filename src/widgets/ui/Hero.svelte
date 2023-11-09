@@ -1,6 +1,6 @@
 <script>
-  import { Logo, Subtitle } from '$entities';
-  import { fsd } from '$lib';
+  import { Logo, Subtitle } from '$entities'
+  import { fsd } from '$lib'
 </script>
 
 <div class="hero" use:fsd={'widgets/Hero'}>

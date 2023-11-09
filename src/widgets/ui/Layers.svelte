@@ -1,7 +1,8 @@
 <script>
-  import CodeBlock from './CodeBlock.svelte';
-  import { layersCode } from '$entities';
-  import { fsd } from '$lib';
+  import { layersCode } from '$entities'
+  import { fsd } from '$lib'
+
+  import CodeBlock from './CodeBlock.svelte'
 </script>
 
 <div use:fsd={'widgets/Layers'}>

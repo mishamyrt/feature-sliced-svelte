@@ -1,7 +1,8 @@
 <script>
-  import { FeatureSlicedDebug, fsd } from '$lib';
-  import { Hero, Setup, Layers, Debugging } from '$widgets';
-  import '../app.css';
+  import '../app.css'
+
+  import { FeatureSlicedDebug, fsd } from '$lib'
+  import { Debugging, Hero, Layers, Setup } from '$widgets'
 </script>
 
 <FeatureSlicedDebug>

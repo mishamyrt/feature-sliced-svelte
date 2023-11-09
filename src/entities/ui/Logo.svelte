@@ -1,6 +1,6 @@
 <script>
-  import { fsd } from '$lib';
-  import { base } from '$app/paths';
+  import { base } from '$app/paths'
+  import { fsd } from '$lib'
 </script>
 
 <div class="logo" use:fsd={'entities/Logo'}>

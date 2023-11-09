@@ -1,2 +1,2 @@
-export * from './queries.js';
-export * from './set-attributes.js';
+export * from './queries.js'
+export * from './set-attributes.js'

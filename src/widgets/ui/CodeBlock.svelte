@@ -1,8 +1,8 @@
 <script>
-  import { fsd } from '$lib';
-  import { CopyButton } from '$features';
+  import { CopyButton } from '$features'
+  import { fsd } from '$lib'
 
-  export let value;
+  export let value
 </script>
 
 <div use:fsd={'widgets/CodeBlock'} class="container">

@@ -1,5 +1,5 @@
 <script>
-  import { fsd } from '$lib';
+  import { fsd } from '$lib'
 </script>
 
 <p class="subtitle" use:fsd={'entities/Subtitle'}>

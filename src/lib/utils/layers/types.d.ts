@@ -1,4 +1,4 @@
-import { allowedLayers } from './constants.js';
+import { allowedLayers } from './constants.js'
 
-export type Layer = (typeof allowedLayers)[number];
-export type ModuleName = `${Layer}/${string}`;
+export type Layer = (typeof allowedLayers)[number]
+export type ModuleName = `${Layer}/${string}`

@@ -1,3 +1,3 @@
-import CopyButton from './ui/CopyButton.svelte';
+import CopyButton from './ui/CopyButton.svelte'
 
-export { CopyButton };
+export { CopyButton }

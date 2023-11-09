@@ -1,35 +1,36 @@
 <script>
-  import { countByLayers } from '../utils/dom/index.js';
-  import { onMount } from 'svelte';
-  import FeatureSlicedOverlay from './FeatureSlicedOverlay.svelte';
+  import { onMount } from 'svelte'
 
-  let showOverlay = false;
-  let layers = [];
-  let activeLayer = '';
+  import { countByLayers } from '../utils/dom/index.js'
+  import FeatureSlicedOverlay from './FeatureSlicedOverlay.svelte'
+
+  let showOverlay = false
+  let layers = []
+  let activeLayer = ''
 
   function handleKeyDown(e) {
-    if (e.code !== 'KeyF' || !e.ctrlKey || !e.shiftKey) return;
-    e.preventDefault();
-    showOverlay = !showOverlay;
-    layers = countByLayers();
+    if (e.code !== 'KeyF' || !e.ctrlKey || !e.shiftKey) return
+    e.preventDefault()
+    showOverlay = !showOverlay
+    layers = countByLayers()
   }
 
   function handleHover(e) {
-    activeLayer = e.detail;
+    activeLayer = e.detail
   }
 
   function handleLeave() {
-    activeLayer = '';
+    activeLayer = ''
   }
 
   onMount(() => {
-    document.body.addEventListener('keydown', handleKeyDown);
-  });
+    document.body.addEventListener('keydown', handleKeyDown)
+  })
 
   $: isLayersVisible = (() => {
-    let defaultValue = false;
+    let defaultValue = false
     if (activeLayer.length === 0) {
-      defaultValue = true;
+      defaultValue = true
     }
     const results = {
       shared: defaultValue,
@@ -38,13 +39,13 @@
       widgets: defaultValue,
       pages: defaultValue,
       app: defaultValue,
-    };
+    }
 
     if (activeLayer.length > 0) {
-      results[activeLayer] = true;
+      results[activeLayer] = true
     }
-    return results;
-  })();
+    return results
+  })()
 </script>
 
 <div

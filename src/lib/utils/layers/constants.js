@@ -5,7 +5,7 @@ export const allowedLayers = /** @type {const} */ ([
   'widgets',
   'pages',
   'app',
-]);
+])
 
 /** @type {Set<string>} */
-export const allowedLayersSet = new Set(allowedLayers);
+export const allowedLayersSet = new Set(allowedLayers)

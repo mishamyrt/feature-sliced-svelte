@@ -1,6 +1,6 @@
 <script>
-  import { Hotkey } from '$entities';
-  import { fsd } from '$lib';
+  import { Hotkey } from '$entities'
+  import { fsd } from '$lib'
 </script>
 
 <div use:fsd={'widgets/Layers'}>
