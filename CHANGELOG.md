@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.2.1...v1.3.0) (2023-11-14)
+
+### Features
+
+* update logo ([abf2db9](https://github.com/mishamyrt/feature-sliced-svelte/commit/abf2db97818ffc850104a699f2da182014a60525))
+* use body styles to correctly handle portals ([41971db](https://github.com/mishamyrt/feature-sliced-svelte/commit/41971db3a64ee9dcf0e26fb8772460c372e681bb))
+
+
+### Bug Fixes
+
+* increase window z-order ([03e5cf6](https://github.com/mishamyrt/feature-sliced-svelte/commit/03e5cf6d30a8eb78e8eb078718e22b92831065e2))
+
 ## [1.2.1](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.2.0...v1.2.1) (2023-11-09)
 
 ### Bug Fixes
