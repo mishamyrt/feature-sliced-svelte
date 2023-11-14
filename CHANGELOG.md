@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.3.0...v1.4.0) (2023-11-14)
+
+### Features
+
+* count only unique modules ([ae5d836](https://github.com/mishamyrt/feature-sliced-svelte/commit/ae5d83680b7376280f6237f14d28a033834fa6c0))
+* move global styles to css file ([d97cc4a](https://github.com/mishamyrt/feature-sliced-svelte/commit/d97cc4a74db16a3c48eb98ae1614739419fec194))
+
+
+### Bug Fixes
+
+* remove extra `)` from css ([25322d1](https://github.com/mishamyrt/feature-sliced-svelte/commit/25322d1bd71f7366d5461f292e829db4b635ef5d))
+
 ## [1.3.0](https://github.com/mishamyrt/feature-sliced-svelte/compare/v1.2.1...v1.3.0) (2023-11-14)
 
 ### Features
