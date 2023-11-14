@@ -1,3 +1,4 @@
+import { layerAttribute, moduleAttribute } from './attributes.js'
 import type { Layer } from './layer'
 
 export interface ModulesCount {
@@ -5,22 +6,25 @@ export interface ModulesCount {
   count: number
 }
 
+const moduleSelector = `[${moduleAttribute}]`
+
 export function getModulesCount(): ModulesCount[] {
-  const items = document.querySelectorAll('[data-fsd]')
-  const results: Record<string, number> = {}
+  const items = document.querySelectorAll(moduleSelector)
+  const results: Record<string, Set<string>> = {}
   for (const item of items) {
-    const layer = item.getAttribute('data-fsd-layer')
-    if (!layer) {
-      throw Error('Found element without "data-fsd-layer" attribute ')
+    const layer = item.getAttribute(layerAttribute)
+    const moduleName = item.getAttribute(moduleAttribute)
+    if (!layer || !moduleName) {
+      throw Error('Found element without required attributes attribute')
     }
     if (results[layer]) {
-      results[layer]++
+      results[layer].add(moduleName)
     } else {
-      results[layer] = 1
+      results[layer] = new Set<string>([moduleName])
     }
   }
-  return Object.entries(results).map(([name, count]) => ({
+  return Object.entries(results).map(([name, items]) => ({
     name: name as Layer,
-    count,
+    count: items.size,
   }))
 }
