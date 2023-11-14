@@ -10,9 +10,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      $features: resolve('src/features'),
-      $widgets: resolve('src/widgets'),
-      $entities: resolve('src/entities'),
+      $features: resolve('src/routes/features'),
+      $widgets: resolve('src/routes/widgets'),
+      $entities: resolve('src/routes/entities'),
       $lib: resolve('src/lib'),
     },
   },

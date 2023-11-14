@@ -13,9 +13,9 @@
     "moduleResolution": "Node",
     "outDir": "dist",
     "paths": {
-      "$features": ["./src/features"],
-      "$widgets": ["./src/widgets"],
-      "$entities": ["./src/entities"],
+      "$features": ["./src/routes/features"],
+      "$widgets": ["./src/routes/widgets"],
+      "$entities": ["./src/routes/entities"],
       "$lib": ["./src/lib"],
       "$lib/*": ["./src/lib/*"]
     }
