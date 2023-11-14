@@ -31,13 +31,13 @@
   --fsd-hue: var(--fsd-hue-app);
 }
 
-[data-fsd-visible="features"] [data-fsd-layer="features"]::after),
-[data-fsd-visible="widgets"] [data-fsd-layer="widgets"]::after),
-[data-fsd-visible="entities"] [data-fsd-layer="entities"]::after),
-[data-fsd-visible="pages"] [data-fsd-layer="pages"]::after),
-[data-fsd-visible="shared"] [data-fsd-layer="shared"]::after),
-[data-fsd-visible="app"] [data-fsd-layer="app"]::after),
-[data-fsd-visible="all"] [data-fsd]::after) {
+[data-fsd-visible="features"] [data-fsd-layer="features"]::after,
+[data-fsd-visible="widgets"] [data-fsd-layer="widgets"]::after,
+[data-fsd-visible="entities"] [data-fsd-layer="entities"]::after,
+[data-fsd-visible="pages"] [data-fsd-layer="pages"]::after,
+[data-fsd-visible="shared"] [data-fsd-layer="shared"]::after,
+[data-fsd-visible="app"] [data-fsd-layer="app"]::after,
+[data-fsd-visible="all"] [data-fsd]::after {
   content: attr(data-fsd);
   pointer-events: none;
   position: absolute;
