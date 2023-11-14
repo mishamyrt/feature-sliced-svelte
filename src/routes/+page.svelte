@@ -5,18 +5,17 @@
   import { Debugging, Hero, Layers, Setup } from '$widgets'
 </script>
 
-<FeatureSlicedDebug>
-  <div class="app" use:fsd={'pages/Index'}>
-    <div class="content">
-      <Hero />
-      <div class="information">
-        <Setup />
-        <Layers />
-        <Debugging />
-      </div>
+<FeatureSlicedDebug />
+<div class="app" use:fsd={'pages/Index'}>
+  <div class="content">
+    <Hero />
+    <div class="information">
+      <Setup />
+      <Layers />
+      <Debugging />
     </div>
   </div>
-</FeatureSlicedDebug>
+</div>
 
 <style>
   .content {
