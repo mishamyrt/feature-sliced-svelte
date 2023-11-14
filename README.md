@@ -33,9 +33,10 @@ Then wrap the root (App) element of your application in a FeatureSlicedDebug com
   import { FeatureSlicedDebug } from 'feature-sliced-svelte'
 </script>
 
-<FeatureSlicedDebug>
+<FeatureSlicedDebug />
+<div>
   <!-- your app code -->
-</FeatureSlicedDebug>
+</div>
 ```
 
 ### Layers
