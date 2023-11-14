@@ -6,9 +6,7 @@
   }
 </script>
 
-<button on:click={handleClick} class="button">
-  Copy
-</button>
+<button on:click={handleClick} class="button">Copy</button>
 
 <style>
   .button {
