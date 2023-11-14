@@ -1,4 +1,4 @@
-.featureSlicedRoot {
+.feature-sliced-root {
   --fsd-hue-features: 141;
   --fsd-hue-pages: 163;
   --fsd-hue-widgets: 290;
@@ -31,27 +31,32 @@
   --fsd-hue: var(--fsd-hue-app);
 }
 
-[data-fsd-visible="features"] [data-fsd-layer="features"]::after,
-[data-fsd-visible="widgets"] [data-fsd-layer="widgets"]::after,
-[data-fsd-visible="entities"] [data-fsd-layer="entities"]::after,
-[data-fsd-visible="pages"] [data-fsd-layer="pages"]::after,
-[data-fsd-visible="shared"] [data-fsd-layer="shared"]::after,
-[data-fsd-visible="app"] [data-fsd-layer="app"]::after,
-[data-fsd-visible="all"] [data-fsd]::after {
-  content: attr(data-fsd);
+[data-fsd-visible='features'] [data-fsd-layer='features']::after,
+[data-fsd-visible='widgets'] [data-fsd-layer='widgets']::after,
+[data-fsd-visible='entities'] [data-fsd-layer='entities']::after,
+[data-fsd-visible='pages'] [data-fsd-layer='pages']::after,
+[data-fsd-visible='shared'] [data-fsd-layer='shared']::after,
+[data-fsd-visible='app'] [data-fsd-layer='app']::after,
+[data-fsd-visible='all'] [data-fsd]::after {
   pointer-events: none;
+  content: attr(data-fsd);
+
   position: absolute;
   top: 0;
   right: 0;
-  box-sizing: border-box;
-  background: oklch(50% 0.15 var(--fsd-hue));
-  color: white;
-  font-size: 10px;
-  line-height: 1;
-  font-weight: bold;
-  padding: 0 2px;
-  font-family: sans-serif;
+
   display: inline-block;
+
+  box-sizing: border-box;
+  padding: 0 2px;
+
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+
+  background: oklch(50% 0.15 var(--fsd-hue));
 }
 
 [data-fsd-visible='features'] [data-fsd-layer='features'],
@@ -61,7 +66,7 @@
 [data-fsd-visible='shared'] [data-fsd-layer='shared'],
 [data-fsd-visible='app'] [data-fsd-layer='app'],
 [data-fsd-visible='all'] [data-fsd] {
-  outline: 2px solid oklch(50% 0.15 var(--fsd-hue));
-  background-color: oklch(50% 0.17 var(--fsd-hue) / 15%);
   position: relative;
+  background-color: oklch(50% 0.17 var(--fsd-hue) / 15%);
+  outline: 2px solid oklch(50% 0.15 var(--fsd-hue));
 }

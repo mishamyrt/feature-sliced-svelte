@@ -3,7 +3,6 @@
   --color-background-secondary: rgb(255 255 255 / 5%);
   --color-content-primary: rgb(255 255 255 / 70%);
   --color-content-accent: rgb(255 255 255 / 95%);
-
   --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   --font-family-code: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
@@ -12,19 +11,20 @@
 
 body,
 html {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 * {
   box-sizing: border-box;
+
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: var(--color-background-primary);
-  color: var(--color-content-primary);
   font-family: var(--font-family-primary);
+  color: var(--color-content-primary);
+  background-color: var(--color-background-primary);
 }
 
 .app {

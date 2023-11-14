@@ -9,7 +9,7 @@
 
 <style>
   .subtitle {
-    font-size: 24px;
     margin: 0;
+    font-size: 24px;
   }
 </style>

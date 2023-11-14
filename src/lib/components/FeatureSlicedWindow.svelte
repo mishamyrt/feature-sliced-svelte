@@ -54,15 +54,15 @@
   }
 
   .heading {
-    opacity: 0.4;
-    font-size: 10px;
     margin: 8px 0 2px;
     padding: 0 14px;
+    font-size: 10px;
+    opacity: 0.4;
   }
 
   .row {
-    font-size: 14px;
     padding: 4px 14px;
+    font-size: 14px;
   }
 
   .row:hover {
@@ -76,26 +76,32 @@
   }
 
   .window {
-    width: 170px;
-    background-color: #282828;
-    color: rgb(255 255 255 / 90%);
-    border-radius: 8px;
     position: fixed;
-    border: 1px solid rgb(60 60 60 / 77%);
-    bottom: 20px;
-    right: 20px;
-    font-family: sans-serif;
-    box-shadow: 0 2px 6px -2px rgb(0 0 0 / 11%);
     z-index: 99999999;
+    right: 20px;
+    bottom: 20px;
+
+    width: 170px;
+
+    font-family: sans-serif;
+    color: rgb(255 255 255 / 90%);
+
+    background-color: #282828;
+    border: 1px solid rgb(60 60 60 / 77%);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px -2px rgb(0 0 0 / 11%);
   }
 
   .legend {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: oklch(50% 0.15 var(--fsd-hue));
     position: relative;
     top: 1px;
+
+    display: inline-block;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: oklch(50% 0.15 var(--fsd-hue));
+    border-radius: 50%;
   }
 </style>

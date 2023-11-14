@@ -10,10 +10,12 @@
 
 <style>
   .button {
-    border-radius: 4px;
+    color: var(--color-content-primary);
+
     background-color: var(--color-background-secondary);
     border: none;
-    color: var(--color-content-primary);
+    border-radius: 4px;
+
     transition: opacity 0.3s ease-out;
   }
 

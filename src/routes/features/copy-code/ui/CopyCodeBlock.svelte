@@ -17,10 +17,12 @@
 
 <style>
   .code {
-    background-color: var(--color-background-secondary);
-    font-family: var(--font-family-code);
-    padding: 7px 20px;
     margin: 0 -20px;
+    padding: 7px 20px;
+
+    font-family: var(--font-family-code);
+
+    background-color: var(--color-background-secondary);
     border-radius: 8px;
   }
 

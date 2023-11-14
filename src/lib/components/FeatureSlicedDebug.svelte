@@ -33,7 +33,7 @@
 
   onMount(() => {
     document.body.addEventListener('keydown', handleKeyDown)
-    document.body.classList.add('featureSlicedRoot')
+    document.body.classList.add('feature-sliced-root')
     setVisibleLayer('none')
   })
 </script>

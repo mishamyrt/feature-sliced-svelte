@@ -10,8 +10,8 @@
 
 <style>
   .combination {
-    font-size: 48px;
     margin: 24px 0;
+    font-size: 48px;
     color: var(--color-content-accent);
   }
 </style>
