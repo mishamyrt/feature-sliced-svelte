@@ -86,6 +86,7 @@
     right: 20px;
     font-family: sans-serif;
     box-shadow: 0 2px 6px -2px rgb(0 0 0 / 11%);
+    z-index: 99999999;
   }
 
   .legend {
